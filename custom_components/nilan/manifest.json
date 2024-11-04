@@ -3,7 +3,7 @@
     "name": "Nilan Climate Control",
     "version": "1.0.0",
     "codeowners": ["@ThomasBLarsen"],
-    "dependencies": [],
+    "dependencies": ["logbook"],
     "documentation": "https://github.com/ThomasBLarsen/nilan_homeassistant/blob/main/README.md",
     "integration_type": "device",
     "issue_tracker": "https://github.com/ThomasBLarsen/nilan_homeassistant/issues",
@@ -11,6 +11,7 @@
     "loggers": [],
     "requirements": ["pymodbus==3.6.6"],
     "quality_scale": "",
-    "config_flow": true
+    "config_flow": true,
+    "quality_scale": "silver"
   }
   
