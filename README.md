@@ -2,20 +2,30 @@
 
 This project provides a custom integration to control the Nilan Climate System using Home Assistant. It enables setting air exchange modes, hot water setpoints, fan modes, and much more using a Modbus client connection.
 
-Important! The code only support Nilan Compact P Nordic. Please contact me if you want dispose of any other Nilan units with Modbus support. Also note that Modbus over ethernet is not supported.
 
 ## Features
 - Monitor and control HVAC modes (Heat, Cool, Heat_Cool).
 - Set target temperatures for heating/cooling.
 - Adjust fan modes with different speed settings.
-- Set air exchange modes (Energy, Comfort, ComfortWater).
+- Monitor operating modes (Heat, Cool, Hotwater, Deice, etc.)
 - Configure hot water setpoints for the boiler system.
 - Access various Nilan system metrics like humidity, fan speeds, and alarm statuses.
+
+## Suported Nilan devices
+- Nilan Compact P Nordic
+
+## Supported communication type
+- [x] RTU/RS485
+- [ ] Modbus over Ethernet
+- [ ] MQTT
 
 ## Prerequisites
 - **Home Assistant**: Make sure Home Assistant is properly installed.
 - **Nilan Climate System**: This integration is designed for use with a Nilan Climate Control device.
 - **Modbus Client**: Ensure that the Nilan device is accessible over Modbus.
+
+## Installation with HACS (recommended)
+Follow the instructions to install HACS: https://www.hacs.xyz/docs/use/configuration/basic/ and search for nilan homeassistant.
 
 ## Installation
 1. **Clone the Repository**:
