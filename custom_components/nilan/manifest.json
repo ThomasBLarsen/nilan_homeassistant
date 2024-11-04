@@ -1,0 +1,15 @@
+{
+    "domain": "nilan",
+    "name": "Nilan Climate Control",
+    "version": "1.0.0",
+    "codeowners": ["@thomasrlars1"],
+    "dependencies": [],
+    "documentation": "https://www.example.com",
+    "integration_type": "device",
+    "iot_class": "local_polling",
+    "loggers": [],
+    "requirements": ["pymodbus==3.6.6"],
+    "quality_scale": "",
+    "config_flow": true
+  }
+  

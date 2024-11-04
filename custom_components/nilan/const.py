@@ -1,0 +1,3 @@
+# const.py
+
+DOMAIN = "nilan"

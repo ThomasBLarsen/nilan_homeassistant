@@ -1,0 +1,40 @@
+set_air_exchange_mode:
+  name: Set Air Exchange Mode
+  description: Set the air exchange mode for the Nilan Climate Control.
+  fields:
+    mode:
+      name: Mode
+      description: The mode to set for air exchange.
+      example: "Comfort"
+      required: true
+      selector:
+        select:
+          options:
+            - "Energy"
+            - "Comfort"
+            - "ComfortWater"
+
+set_hotwater_setpoints:
+  name: Set Hot Water Setpoints
+  description: Set the hot water temperature setpoints for the boiler in the Nilan Climate Control.
+  fields:
+    top_temperature:
+      name: Top Temperature Setpoint
+      description: Set the top temperature of the boiler (electric heating element).
+      example: 55.0
+      required: false
+      selector:
+        number:
+          min: 10
+          max: 85
+          unit_of_measurement: "°C"
+    bottom_temperature:
+      name: Bottom Temperature Setpoint
+      description: Set the bottom temperature of the boiler (compressor heating).
+      example: 45.0
+      required: false
+      selector:
+        number:
+          min: 10
+          max: 85
+          unit_of_measurement: "°C"
